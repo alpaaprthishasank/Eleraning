@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>E-Learning Course Selection</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+   .course-list {
+      display: flex;
+      flex-wrap: wrap;
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    .course-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+    }
+    
+    .course-item:hover {
+      background-color: #ebebeb;
+    }
+    
+    .course-item h3 {
+      margin-top: 0;
+    }
+    
+    .course-item p {
+      margin-bottom: 0;
+    }
+    
+    .course-item .btn-enroll {
+      background-color: red;
+      color: black;
+      padding: 5px 5px;
+      text-decoration: none;
+  margin-left: 100px;
+    }
+    
+    .course-item .btn-enroll:hover {
+      background-color: pink;
+    }
+  </style>
+</head>
+<body>
+  <%-include('partials/nav3.ejs')%>
+  <div class="container">
+    <ul class="course-list">
+      <li class="course-item">
+        <div>
+          <img src="assets/recorded.jpg" alt="recorded">
+        </div>
+        <a class="btn-enroll" href="/python1">Recorded video 1 </a>
+      </li>
+  <li class="course-item">
+        <div>
+            <img src="assets/recorded.jpg" alt="recorded">
+        </div>
+        <a class="btn-enroll" href="/python2">Recorded video 2</a>
+      </li>
+      <li class="course-item">
+        <div>
+            <img src="assets/recorded.jpg" alt="recorded">
+        </div>
+        <a class="btn-enroll" href="/python3">Recorded video 3</a>
+      </li>
+      <li class="course-item">
+        <div>
+          <img src="assets/dataS_img.jpg" alt="dataS_img">
+        </div>
+        <a class="btn-enroll" href="/pythonquiz">C_quiz</a>
+      </li>
+     
+</body>
+</html>
+
+</body>
+</html>

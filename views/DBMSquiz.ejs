@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MCQs DBMS</title>
+</head>
+<body>
+	<h1>MCQs in Operating Systems</h1>
+	<form>
+		<!-- Question 1 -->
+		<p>1.Which of the following is the full form of DDL?</p>
+		<input type="radio" name="q1" value="a"> Data definition language<br>
+		<input type="radio" name="q1" value="b"> data derviation language<br>
+		<input type="radio" name="q1" value="c">dynamic data language<br>
+		<input type="radio" name="q1" value="d"> detailed data language<br>
+
+		<!-- Question 2 -->
+		<p>2.Which of the following is the property of transaction that protects data from system failure?</p>
+		<input type="radio" name="q2" value="a">Atomocity<br>
+		<input type="radio" name="q2" value="b">Isoloation<br>
+		<input type="radio" name="q2" value="c">Durability<br>
+		<input type="radio" name="q2" value="d">consistency<br>
+
+		<!-- Question 3 -->
+		<p>3.Which of the following is preserved in execution of transaction in isolation?<br>
+		</p>
+		<input type="radio" name="q3" value="a"> Atomocity<br>
+		<input type="radio" name="q3" value="b"> Isolation<br>
+		<input type="radio" name="q3" value="c"> Durability<br>
+		<input type="radio" name="q3" value="d"> Consitency<br>
+
+		<p>4. Which normalization form is based on the transitive dependency?</p>
+		<input type="radio" name="q4" value="a"> 1NF<br>
+		<input type="radio" name="q4" value="b"> 2NF<br>
+		<input type="radio" name="q4" value="c"> 3NF<br>
+		<input type="radio" name="q4" value="d"> BCNF<br>
+
+		<p>5.Which is the lowest level of abstraction that describes how the data are actually stored? </p>
+		<input type="radio" name="q5" value="a"> physical<br>
+		<input type="radio" name="q5" value="b"> abstract<br>
+		<input type="radio" name="q5" value="c"> view<br>
+		<input type="radio" name="q5" value="d"> user<br>
+
+		<p>6. For performing tasks like creating the structure of the relations, deleting relation, which of the following is used?</p>
+		<input type="radio" name="q6" value="a"> data definition language <br>
+		<input type="radio" name="q6" value="b"> data derivation language<br>
+		<input type="radio" name="q6" value="c"> dyanmic data language<br>
+		<input type="radio" name="q6" value="d"> detail data langiage<br>
+		
+		<p>7. What is rows of a relation known as?</p>
+		<input type="radio" name="q7" value="a"> degree<br>
+		<input type="radio" name="q7" value="b"> entity<br>
+		<input type="radio" name="q7" value="c"> tuple<br>
+		<input type="radio" name="q7" value="d"> none<br>
+
+
+		<p>8. Which of the following is a command of  DDL?</p>
+		<input type="radio" name="q8" value="a"> alter<br>
+		<input type="radio" name="q8" value="b"> delete<br>
+		<input type="radio" name="q8" value="c"> view<br>
+		<input type="radio" name="q8" value="d"> all the above<br>
+
+		
+		<p>9. During transaction before commit which of the following statement is done automatically in case of shutdown?</p>
+		<input type="radio" name="q9" value="a"> roll back <br>
+		<input type="radio" name="q9" value="b"> commit<br>
+		<input type="radio" name="q9" value="c"> view <br>
+		<input type="radio" name="q9" value="d"> flash back<br>
+
+
+		<p>10. Which of the following is the full form of TCL?</p>
+		<input type="radio" name="q10" value="a"> ternary control language<br>
+		<input type="radio" name="q10" value="b"> transaction control languge<br>
+		<input type="radio" name="q10" value="c"> transcation central language<br>
+		<input type="radio" name="q10" value="d"> transmission control language<br>
+
+
+		
+
+	
+
+		<br><br>
+		<button type="button" onclick="checkAnswers()">Submit</button>
+	</form>
+
+	<br><br>
+	<div id="answers"></div>
+
+	<script>
+var result;
+		function checkAnswers() {
+			// Get user's answers
+			var q1Answer = document.querySelector('input[name="q1"]:checked').value;
+			var q2Answer = document.querySelector('input[name="q2"]:checked').value;
+			var q3Answer = document.querySelector('input[name="q3"]:checked').value;
+			var q4Answer = document.querySelector('input[name="q4"]:checked').value;
+			var q5Answer = document.querySelector('input[name="q5"]:checked').value;
+			var q6Answer = document.querySelector('input[name="q6"]:checked').value;
+			var q7Answer = document.querySelector('input[name="q7"]:checked').value;
+			var q8Answer = document.querySelector('input[name="q8"]:checked').value;
+			var q9Answer = document.querySelector('input[name="q9"]:checked').value;
+			var q10Answer = document.querySelector('input[name="q10"]:checked').value;
+			// Correct answers
+			var q1CorrectAnswer = "a";
+			var q2CorrectAnswer = "c";
+			var q3CorrectAnswer = "d";
+			var q4CorrectAnswer = "c";
+			var q5CorrectAnswer = "a";
+			var q6CorrectAnswer = "a";
+            var q7CorrectAnswer = "c";
+			var q8CorrectAnswer = "a";
+			var q9CorrectAnswer = "a";
+			var q10CorrectAnswer = "b";
+			
+			// Check answers and display result
+			var correctAnswers = 0;
+			if (q1Answer == q1CorrectAnswer) {
+				correctAnswers++;
+			}
+			if (q2Answer == q2CorrectAnswer) {
+				correctAnswers++;
+			}
+			if (q3Answer == q3CorrectAnswer) {
+				correctAnswers++;
+			}
+			if (q4Answer == q4CorrectAnswer) {
+				correctAnswers++;
+			}
+			if (q5Answer == q5CorrectAnswer) {
+				correctAnswers++;
+			}
+			if (q6Answer == q6CorrectAnswer) {
+				correctAnswers++;
+			}
+
+			if (q7Answer == q7CorrectAnswer) {
+				correctAnswers++;
+			}
+			if (q8Answer == q8CorrectAnswer) {
+				correctAnswers++;
+			}
+			if (q9Answer == q9CorrectAnswer) {
+				correctAnswers++;
+			}
+			if (q10Answer == q10CorrectAnswer) {
+				correctAnswers++;
+			}
+			
+
+
+
+		result =  correctAnswers;
+			document.getElementById("answers").innerHTML = result;
+
+  alert("Congratulations!. Your have secured: " + result);
+}
+
+
+
+	</script>
+</body>
+</html>

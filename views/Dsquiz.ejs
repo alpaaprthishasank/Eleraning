@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MCQs DS</title>
+</head>
+<body>
+	<h1>MCQs in DS</h1>
+	<form>
+		<!-- Question 1 -->
+		<p>1.In order traversal of binary search tree will produce___</p>
+		<input type="radio" name="q1" value="a"> unsorted list<br>
+		<input type="radio" name="q1" value="b"> reverse of input<br>
+		<input type="radio" name="q1" value="c">sorted list <br>
+		<input type="radio" name="q1" value="d"> none of the above<br>
+
+		<!-- Question 2 -->
+		<p>2.What data structure is used for depth first traversal of a graph?</p>
+		<input type="radio" name="q2" value="a">queues<br>
+		<input type="radio" name="q2" value="b">stack<br>
+		<input type="radio" name="q2" value="c"> List<br>
+		<input type="radio" name="q2" value="d"> none<br>
+
+		<!-- Question 3 -->
+		<p>3.Binary search tree has best case run-time complexity of Ο(log n). What could the worst case?<br>
+		</p>
+		<input type="radio" name="q3" value="a"> O(n)<br>
+		<input type="radio" name="q3" value="b"> O(n^2)<br>
+		<input type="radio" name="q3" value="c"> O(n^3)<br>
+		<input type="radio" name="q3" value="d"> none<br>
+
+		<p>4.What about recursion is true in comparison with iteration? </p>
+		<input type="radio" name="q4" value="a"> very expensive in terms of memory<br>
+		<input type="radio" name="q4" value="b"> low performance<br>
+		<input type="radio" name="q4" value="c"> every recursive program can be written with iteration too<br>
+		<input type="radio" name="q4" value="d"> all the above are true<br>
+
+		<p>5. How many swaps are required to sort the given array using bubble sort - { 2, 5, 1, 3, 4}?</p>
+		<input type="radio" name="q5" value="a"> 4<br>
+		<input type="radio" name="q5" value="b"> 5<br>
+		<input type="radio" name="q5" value="c"> 6<br>
+		<input type="radio" name="q5" value="d"> 7<br>
+
+		<p>6. In doubly linked lists</p>
+		<input type="radio" name="q6" value="a"> a pointer is maintained to store both next and previous nodes<br>
+		<input type="radio" name="q6" value="b"> Two pinters are maintained to store next and previous nodes<br>
+		<input type="radio" name="q6" value="c"> A pointer to self is maintained for each node<br>
+		<input type="radio" name="q6" value="d"> none<br>
+		
+		<p>7. Tower of hanoi is a classic example of</p>
+		<input type="radio" name="q7" value="a"> divide and conquer<br>
+		<input type="radio" name="q7" value="b"> recursive approach<br>
+		<input type="radio" name="q7" value="c"> b but not a<br>
+		<input type="radio" name="q7" value="d"> a and b<br>
+
+
+		<p>8. A pivot element to partition unsorted list is used in</p>
+		<input type="radio" name="q8" value="a"> merge sort<br>
+		<input type="radio" name="q8" value="b"> quick sort<br>
+		<input type="radio" name="q8" value="c"> insertion sort<br>
+		<input type="radio" name="q8" value="d"> selection sort<br>
+
+		
+		<p>9. Which of the following algorithm does not divide the list −</p>
+		<input type="radio" name="q9" value="a"> linear search <br>
+		<input type="radio" name="q9" value="b"> binary search<br>
+		<input type="radio" name="q9" value="c"> merge sort<br>
+		<input type="radio" name="q9" value="d"> quick sort<br>
+
+
+		<p>10. Which of the following asymptotic notation is the worst among all?</p>
+		<input type="radio" name="q10" value="a"> O(n+9378)<br>
+		<input type="radio" name="q10" value="b"> O(n^3)<br>
+		<input type="radio" name="q10" value="c"> n^o(1)<br>
+		<input type="radio" name="q10" value="d"> 2^O(n)<br>
+
+
+		
+
+	
+
+		<br><br>
+		<button type="button" onclick="checkAnswers()">Submit</button>
+	</form>
+
+	<br><br>
+	<div id="answers"></div>
+
+	<script>
+var result;
+		function checkAnswers() {
+			// Get user's answers
+			var q1Answer = document.querySelector('input[name="q1"]:checked').value;
+			var q2Answer = document.querySelector('input[name="q2"]:checked').value;
+			var q3Answer = document.querySelector('input[name="q3"]:checked').value;
+			var q4Answer = document.querySelector('input[name="q4"]:checked').value;
+			var q5Answer = document.querySelector('input[name="q5"]:checked').value;
+			var q6Answer = document.querySelector('input[name="q6"]:checked').value;
+			var q7Answer = document.querySelector('input[name="q7"]:checked').value;
+			var q8Answer = document.querySelector('input[name="q8"]:checked').value;
+			var q9Answer = document.querySelector('input[name="q9"]:checked').value;
+			var q10Answer = document.querySelector('input[name="q10"]:checked').value;
+			// Correct answers
+			var q1CorrectAnswer = "c";
+			var q2CorrectAnswer = "b";
+			var q3CorrectAnswer = "a";
+			var q4CorrectAnswer = "d";
+			var q5CorrectAnswer = "a";
+			var q6CorrectAnswer = "b";
+            var q7CorrectAnswer = "d";
+			var q8CorrectAnswer = "b";
+			var q9CorrectAnswer = "a";
+			var q10CorrectAnswer = "b";
+			
+			// Check answers and display result
+			var correctAnswers = 0;
+			if (q1Answer == q1CorrectAnswer) {
+				correctAnswers++;
+			}
+			if (q2Answer == q2CorrectAnswer) {
+				correctAnswers++;
+			}
+			if (q3Answer == q3CorrectAnswer) {
+				correctAnswers++;
+			}
+			if (q4Answer == q4CorrectAnswer) {
+				correctAnswers++;
+			}
+			if (q5Answer == q5CorrectAnswer) {
+				correctAnswers++;
+			}
+			if (q6Answer == q6CorrectAnswer) {
+				correctAnswers++;
+			}
+
+			if (q7Answer == q7CorrectAnswer) {
+				correctAnswers++;
+			}
+			if (q8Answer == q8CorrectAnswer) {
+				correctAnswers++;
+			}
+			if (q9Answer == q9CorrectAnswer) {
+				correctAnswers++;
+			}
+			if (q10Answer == q10CorrectAnswer) {
+				correctAnswers++;
+			}
+			
+
+
+
+		 result =  correctAnswers;
+			document.getElementById("answers").innerHTML = result;
+if (result >= 8) 
+{
+  alert("Congratulations! You have been selected as an instructor. Your quiz marks are: " + result);
+} 
+else 
+{
+  alert("Thank you for taking the quiz. Your quiz marks are: " + result);
+}
+}
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>E-Learning Course Selection</title>
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+        }
+        
+        .container {
+          max-width: 800px;
+          margin: 0 auto;
+          padding: 20px;
+        }
+        
+        h1 {
+          text-align: center;
+        }
+        
+       .course-list {
+          display: flex;
+          flex-wrap: wrap;
+          list-style-type: none;
+          padding: 0;
+        }
+        
+        .course-item {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 10px;
+          border: 1px solid #ccc;
+          padding: 10px;
+          background-color: #f9f9f9;
+          border-radius: 5px;
+        }
+        
+        .course-item:hover {
+          background-color: #ebebeb;
+        }
+        
+        .course-item h3 {
+          margin-top: 0;
+        }
+        
+        .course-item p {
+          margin-bottom: 0;
+        }
+        
+        .course-item .btn-enroll {
+          background-color: red;
+          color: black;
+          padding: 5px 5px;
+          text-decoration: none;
+      margin-left: 100px;
+        }
+        
+        .course-item .btn-enroll:hover {
+          background-color: pink;
+        }
+      </style>
+    </head>
+    <body>
+      <%-include('partials/nav3.ejs')%>  
+      <div class="container">
+        <h1>Available Courses</h1>
+        <ul class="course-list">
+          <li class="course-item">
+            <div>
+              <img src="assets/c_img.jpg" alt="c_img">
+            </div>
+            <a class="btn-enroll" href="/c_course">Select</a>
+          </li>
+      <li class="course-item">
+            <div>
+              <img src="assets/c++_img.jpg" alt="cplusplus_img">
+            </div>
+            <a class="btn-enroll" href="/cplusplus">Select</a>
+          </li>
+          <li class="course-item">
+            <div>
+              <img src="assets/jav_img.jpg" alt="java_img">
+            </div>
+            <a class="btn-enroll" href="/java">Select</a>
+          </li>
+          <li class="course-item">
+            <div>
+              <img src="assets/dataS_img.jpg" alt="dataS_img">
+            </div>
+            <a class="btn-enroll" href="/Datastructres">Select</a>
+          </li>
+          <li class="course-item">
+            <div>
+              <img src="assets/alg_img.jpg" alt="alg_img">
+            </div>
+            <a class="btn-enroll" href="/Algorithms">Select</a>
+          </li>
+      <li class="course-item">
+            <div>
+              <img src="assets/cn_img.jpg" alt="cn_img">
+            </div>
+            <a class="btn-enroll" href="/cn">Select</a>
+          </li>
+      <li class="course-item">
+            <div>
+              <img src="assets/python_img.jpg" alt="python_img">
+            </div>
+            <a class="btn-enroll" href="/python">Select</a>
+          </li>
+      <li class="course-item">
+            <div>
+              <img src="assets/os_img.jpg" alt="os_img">
+            </div>
+            <a class="btn-enroll" href="/Operating_Systems">Select</a>
+          </li>
+      <li class="course-item">
+            <div>
+              <img src="assets/dbms_img.jpg" alt="dbms_img">
+            </div>
+            <a class="btn-enroll" href="/DBMS">Select</a>
+          </li>
+    </body>
+    </html>
+    
+  </body>
+</html>

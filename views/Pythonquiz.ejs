@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MCQs Operating Systems</title>
+</head>
+<body>
+	<h1>MCQs in Python</h1>
+	<form>
+		<!-- Question 1 -->
+		<p>1.What is output for −<br>
+
+a = ['he', 'she', 'we']<br>
+
+' '.join(a)<br></p>
+		<input type="radio" name="q1" value="a"> ['heshewe']<br>
+		<input type="radio" name="q1" value="b">'heshewe'<br>
+		<input type="radio" name="q1" value="c">['he she we']<br>
+		<input type="radio" name="q1" value="d"> 'he she we'<br>
+
+		<!-- Question 2 -->
+		<p>2.Name the python module which supports regular expressions.</p>
+		<input type="radio" name="q2" value="a">regex<br>
+		<input type="radio" name="q2" value="b">re<br>
+		<input type="radio" name="q2" value="c">pyre<br>
+		<input type="radio" name="q2" value="d">pyregex<br>
+
+		<!-- Question 3 -->
+		<p>3.What is output of following code −<br>
+
+print('hijk'.partition('ab'))<br>
+		</p>
+		<input type="radio" name="q3" value="a"> ('hijk','cd','')<br>
+		<input type="radio" name="q3" value="b"> ('hijk')<br>
+		<input type="radio" name="q3" value="c"> ('hijk','','')<br>
+		<input type="radio" name="q3" value="d"> name error<br>
+
+		<p>4.What is output of following code −
+<code>
+
+def func(n):<br>
+   if(n==1):<br>
+      return 1;<br>
+   else:<br>
+      return(n+func(n-1))<br>
+print(func(4))<br>
+</code>
+ </p>
+		<input type="radio" name="q4" value="a"> 12<br>
+		<input type="radio" name="q4" value="b"> 10<br>
+		<input type="radio" name="q4" value="c"> 9<br>
+		<input type="radio" name="q4" value="d"> 11<br>
+
+		<p>5.What is output of following −<br>
+<code>
+print(''abbzxyzxzxabb''.count(‘abb’,-10,-1))<br>
+</code>
+ </p>
+		<input type="radio" name="q5" value="a"> 2<br>
+		<input type="radio" name="q5" value="b"> 0<br>
+		<input type="radio" name="q5" value="c"> 1<br>
+		<input type="radio" name="q5" value="d"> error<br>
+
+		<p>6.What is the output of the following code?<br>
+<code>
+eval(''1 + 3 * 2'')
+</code>
+<br>
+ </p>
+		<input type="radio" name="q6" value="a"> '1+6' <br>
+		<input type="radio" name="q6" value="b"> '4*2'<br>
+		<input type="radio" name="q6" value="c"> '1+3*2'<br>
+		<input type="radio" name="q6" value="d"> 7<br>
+		
+		<p>7.Discuss the outcome of the code?
+<code>
+
+def func1(n): <br>
+   if(n==0): <br>
+      return 0 <br>
+   else: <br>
+      return(n+func1(n-1)) <br>
+def func2(n, result): <br>
+   if(n==0): <br>
+      return(result) <br>
+   else: <br>
+      return(func2(n-1, n+result))  <br>
+print(func1(4)) <br>
+print(func2(4,0)) <br>
+</code>
+</p>
+		<input type="radio" name="q7" value="a"> Func1 is tail recursion<br>
+		<input type="radio" name="q7" value="b"> Func1 and Func2 are tail recursions<br>
+		<input type="radio" name="q7" value="c"> Func2 is only tail recursion<br>
+		<input type="radio" name="q7" value="d"> none<br>
+
+
+		<p>8.How to create a frame in Python? </p>
+		<input type="radio" name="q8" value="a"> Frame = new.window()<br>
+		<input type="radio" name="q8" value="b"> Frame = frame.new()<br>
+		<input type="radio" name="q8" value="c"> Frame = Frame()<br>
+		<input type="radio" name="q8" value="d"> Frame = windows.new()<br>
+
+		
+		<p>9.In Python we can create a popup menu. Select the code to display a popup menu? </p>
+		<input type="radio" name="q9" value="a"> Menu.post(250,250) <br>
+		<input type="radio" name="q9" value="b"> Menu.post()<br>
+		<input type="radio" name="q9" value="c"> Menu.display() <br>
+		<input type="radio" name="q9" value="d"> Menu.displa_popup(250,250)<br>
+
+
+		<p>10.What is the value of a, b, c in the given below code?
+
+a, b = c = 2 + 2, ''TutorialsPoint'' </p>
+		<input type="radio" name="q10" value="a"><br>
+ a=4, 'TutorialsPoint'<br>
+
+b= 4, 'TutorialsPoint'<br>
+
+c= 4, 'TutorialsPoint'. <br>
+		<input type="radio" name="q10" value="b"> <br>
+ a=2<br>
+
+b= 'TutorialsPoint'<br>
+
+c=4, 'TutorialsPoint'<br>
+		<input type="radio" name="q10" value="c"><br>
+ a=4<br>
+
+b= 'TutorialsPoint'<br>
+
+c=4, 'TutorialsPoint'<br>
+		<input type="radio" name="q10" value="d"> <br>
+ a=4<br>
+
+b= 'TutorialsPoint'<br>
+
+c= NULL.<br>
+
+
+		
+
+	
+
+		<br><br>
+		<button type="button" onclick="checkAnswers()">Submit</button>
+	</form>
+
+	<br><br>
+	<div id="answers"></div>
+
+	<script>
+var result;
+		function checkAnswers() {
+			// Get user's answers
+			var q1Answer = document.querySelector('input[name="q1"]:checked').value;
+			var q2Answer = document.querySelector('input[name="q2"]:checked').value;
+			var q3Answer = document.querySelector('input[name="q3"]:checked').value;
+			var q4Answer = document.querySelector('input[name="q4"]:checked').value;
+			var q5Answer = document.querySelector('input[name="q5"]:checked').value;
+			var q6Answer = document.querySelector('input[name="q6"]:checked').value;
+			var q7Answer = document.querySelector('input[name="q7"]:checked').value;
+			var q8Answer = document.querySelector('input[name="q8"]:checked').value;
+			var q9Answer = document.querySelector('input[name="q9"]:checked').value;
+			var q10Answer = document.querySelector('input[name="q10"]:checked').value;
+			// Correct answers
+			var q1CorrectAnswer = "b";
+			var q2CorrectAnswer = "b";
+			var q3CorrectAnswer = "c";
+			var q4CorrectAnswer = "b";
+			var q5CorrectAnswer = "b";
+			var q6CorrectAnswer = "d";
+            var q7CorrectAnswer = "b";
+			var q8CorrectAnswer = "c";
+			var q9CorrectAnswer = "a";
+			var q10CorrectAnswer = "c";
+			
+			// Check answers and display result
+			var correctAnswers = 0;
+			if (q1Answer == q1CorrectAnswer) {
+				correctAnswers++;
+			}
+			if (q2Answer == q2CorrectAnswer) {
+				correctAnswers++;
+			}
+			if (q3Answer == q3CorrectAnswer) {
+				correctAnswers++;
+			}
+			if (q4Answer == q4CorrectAnswer) {
+				correctAnswers++;
+			}
+			if (q5Answer == q5CorrectAnswer) {
+				correctAnswers++;
+			}
+			if (q6Answer == q6CorrectAnswer) {
+				correctAnswers++;
+			}
+
+			if (q7Answer == q7CorrectAnswer) {
+				correctAnswers++;
+			}
+			if (q8Answer == q8CorrectAnswer) {
+				correctAnswers++;
+			}
+			if (q9Answer == q9CorrectAnswer) {
+				correctAnswers++;
+			}
+			if (q10Answer == q10CorrectAnswer) {
+				correctAnswers++;
+			}
+			
+
+
+
+		 result =  correctAnswers;
+			document.getElementById("answers").innerHTML = result;
+
+  alert("Congratulations!. Your have secured: " + result);
+
+
+}
+
+	</script>
+</body>
+</html>
